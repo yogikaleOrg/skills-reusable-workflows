@@ -1,11 +1,11 @@
 name: Reusable Workflow
 
 on:
-  workflow_dispatch:
-    inputs:
-      node:
-        required: true
-        type: string
+    workflow_call:
+            inputs:
+                        node:
+                                        required:  true
+                                        type:  string
 
 jobs:
   build:
